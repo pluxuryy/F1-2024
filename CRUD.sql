@@ -36,3 +36,6 @@ SET
     World_Champion = True
 WHERE
     driver_id IN (10, 16, 6);
+
+ALTER TABLE Tracks ADD COLUMN layout_image TEXT;
+

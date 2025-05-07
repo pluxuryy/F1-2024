@@ -1,4 +1,4 @@
-
+import os
 from flask import Flask, render_template
 import sqlite3
 
@@ -44,9 +44,10 @@ def tracks():
     return render_template('tracks.html', tracks=tracks)
 
 
-import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
+#https://f1-2024-dashboard.onrender.com
 

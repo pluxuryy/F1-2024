@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% block content %}
   <h2>Tracks</h2>
@@ -5,17 +6,27 @@
     <tr>
       <th>Name</th>
       <th>Country</th>
-      <th>Year</th>
       <th>Length (km)</th>
+      <th>Year</th>
       <th>Turns</th>
+      <th>Layout</th>
     </tr>
     {% for track in tracks %}
       <tr>
         <td>{{ track.name }}</td>
         <td>{{ track.country }}</td>
+        <td>{{ track.length_km }}</td>
         <td>{{ track.year }}</td>
-        <td>{{ track.Length_km }}</td>
         <td>{{ track.turns }}</td>
+        <td>
+          {% if track.layout_image %}
+            <img src="{{ url_for('static', filename='images/tracks/' + track.layout_image) }}"
+                 alt="{{ track.name }} layout"
+                 style="max-width: 200px; border-radius: 8px;">
+          {% else %}
+            No image
+          {% endif %}
+        </td>
       </tr>
     {% endfor %}
   </table>
