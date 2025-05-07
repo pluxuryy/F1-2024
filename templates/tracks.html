@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Tracks</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Length (km)</th>
+      <th>Turns</th>
+    </tr>
+    {% for track in tracks %}
+      <tr>
+        <td>{{ track.name }}</td>
+        <td>{{ track.country }}</td>
+        <td>{{ track.year }}</td>
+        <td>{{ track.Length_km }}</td>
+        <td>{{ track.turns }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

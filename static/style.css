@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #8b0000, #e60000);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #660000;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #262626;
+}
+
+tr:hover {
+    background-color: #400000;
+}
+
+h2 {
+    color: #ff6666;
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+p {
+    margin: 1rem 0;
+    color: #dddddd;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+li {
+    margin: 0.4rem 0;
+    padding-left: 1rem;
+    list-style-type: square;
+    color: #e6e6e6;
+    font-weight: 300;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.highlight {
+    background-color: #330000;
+    padding: 0.5rem;
+    border-left: 4px solid #ff1a1a;
+    margin-bottom: 1rem;
+}

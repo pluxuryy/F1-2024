@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Driver Standings</h2>
+<table>
+  <tr>
+    <th>Race Number</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Country</th>
+    <th>Best Race Position</th>
+    <th>Fastest Laps</th>
+    <th>Podiums</th>
+    <th>Wins</th>
+    <th>Points</th>
+  </tr>
+  {% for driver in drivers %}
+  <tr>
+    <td>{{ driver.race_number }}</td>
+    <td>{{ driver.name }}</td>
+    <td>{{ driver.age }}</td>
+    <td>{{ driver.country }}</td>
+    <td>{{ driver.best_race_position }}</td>
+    <td>{{ driver.fastest_laps }}</td>
+    <td>{{ driver.podiums }}</td>
+    <td>{{ driver.wins }}</td>
+    <td>{{ driver.points }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

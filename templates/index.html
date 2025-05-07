@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Welcome to the F1 2024 Overview</h2>
+<p>Total Drivers: {{ drivers_count }}</p>
+<p>Total Teams: {{ teams_count }}</p>
+<p>Total Tracks: {{ tracks_count }}</p>
+<h2>About This Site</h2>
+<p>This website provides an overview of the 2024 Formula 1 season.</p>
+<ul>
+  <li><strong>Drivers:</strong> View current driver standings, including points and fastest laps.</li>
+  <li><strong>Teams:</strong> See each team's performance and overall points.</li>
+  <li><strong>Tracks:</strong> Learn about the tracks featured in this year's season.</li>
+</ul>
+<p>Data is sourced from an internal database and updated periodically.</p>
+{% endblock %}
